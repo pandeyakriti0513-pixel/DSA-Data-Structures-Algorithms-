@@ -6,9 +6,9 @@ int main(){
     cin>>n_1>>n_2;
     n_1=abs(n_1);
     n_2=abs(n_2);
-    i=fmax(n_1,n_2);
+    i=(int)fmax(n_1,n_2);
     if(n_1==0||n_2==0){
-        printf("The lowest common multiple is 0");
+        cout<<"The lowest common multiple is 0";
         return 0;
     }
     while((i%n_1)!=0 || (i%n_2)!=0){

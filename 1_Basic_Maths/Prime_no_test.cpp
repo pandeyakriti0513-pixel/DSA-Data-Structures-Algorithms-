@@ -11,6 +11,9 @@ int main(){
         for(i=1;i*i<=n;i++){
             if(n%i==0){
                 flag++;
+                if((n/i)!=i){
+                    flag++;
+                }
             }
         }
         if(flag==2){
